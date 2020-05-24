@@ -24,15 +24,15 @@
       <form id="survey-form" method="get">
         <div>
           <label for="name" id="name-label">Full Name</label> <br>
-          <input type="text" name="full-name" id="name" placeholder="Enter your name..." required>
+          <input class="name-email-age" type="text" name="full-name" id="name" placeholder="Enter your name..." required>
         </div>  
         <div>
           <label for="email" id="email-label">Email</label> <br>
-          <input type="email" name="email" id="email" required placeholder="Enter your email..">
+          <input class="name-email-age" type="email" name="email" id="email" required placeholder="Enter your email..">
         </div>
         <div>
           <label for="number" id="number-label">Age</label> <br>
-          <input type="number" name="age" id="number" min="12" max="100" required placeholder="Please enter your age...">
+          <input class="name-email-age" type="number" name="age" id="number" min="12" max="100" required placeholder="Please enter your age...">
         </div>
        <div id="dropdown"class="dropdown">
          <button class="btn btn-secondary dropdown-toggle" type="button" id="triggerId" data-toggle="dropdown" aria-haspopup="true"
@@ -94,8 +94,13 @@
 
          
        </div>
-
-       
+      <div>
+        <label for="comment">Any comments?</label> <br>
+        <textarea name="comment" id="comment-box" cols="35" rows="6"></textarea>
+      </div>
+      <div>
+        <input type="submit" value="submit" id="submit">
+      </div>
 
         </form>
     </main>
