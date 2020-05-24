@@ -16,6 +16,7 @@
 
 .name-email-age {
     width: 20%;
+    text-align: start;
 }
 
 label {
@@ -27,8 +28,8 @@ label {
     margin-bottom: 10px;
 }
 #comment-box{
-
-    width:80%;
+    text-align: start;
+    width:20%;
     height:50%;
 }
 #comment-box:hover{
@@ -37,7 +38,13 @@ label {
 
 #submit{
     background-color: teal;
+    padding: 8px;
 }
 #submit:hover {
  background-color: steelblue;
 }
+
+.radio-buttons, #dropdown {
+    cursor: pointer;
+}
+
