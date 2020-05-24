@@ -10,6 +10,9 @@
     width: 100vw;
     background-color: blueviolet;
 }
+#container{
+    width:50%;
+}
 
 .name-email-age {
     width: 20%;
@@ -22,4 +25,19 @@ label {
 
 #number {
     margin-bottom: 10px;
+}
+#comment-box{
+
+    width:80%;
+    height:50%;
+}
+#comment-box:hover{
+    border-bottom:2px solid yellow;
+}
+
+#submit{
+    background-color: teal;
+}
+#submit:hover {
+ background-color: steelblue;
 }
