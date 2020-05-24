@@ -23,17 +23,16 @@
 
       <form id="survey-form" method="get">
         <div>
-          <label for="name" id="name-label">Full Name</label>
+          <label for="name" id="name-label">Full Name</label> <br>
           <input type="text" name="full-name" id="name" placeholder="Enter your name..." required>
         </div>  
         <div>
-          <label for="email" id="email-label">Email</label>
-        </div>
+          <label for="email" id="email-label">Email</label> <br>
           <input type="email" name="email" id="email" required placeholder="Enter your email..">
         </div>
         <div>
-          <label for="number" id="number-label">Age</label>
-          <input type="text" name="age" id="number" min="12" max="100" required>
+          <label for="number" id="number-label">Age</label> <br>
+          <input type="number" name="age" id="number" min="12" max="100" required placeholder="Please enter your age...">
         </div>
        <div id="dropdown"class="dropdown">
          <button class="btn btn-secondary dropdown-toggle" type="button" id="triggerId" data-toggle="dropdown" aria-haspopup="true"
@@ -49,9 +48,26 @@
 
        <div class="form-check">
          <label class="form-check-label">
-           <input type="radio" class="form-check-input" name="" id="" value="checkedValue" checked>
+           <input type="radio" class="form-check-input" name="radio" id="" value="checkedValue" checked>
            Display value
          </label>
+       </div>
+
+       <div>
+         <label for="radio" id="refer-label">Would you recommend Microverse to a friend?</label> <br>
+         <input type="radio" name="radio" value="1" class="radio-buttons"> Of course! <br>
+         <input type="radio" name="radio" value="2" class="radio-buttons"> Might do <br>
+         <input type="radio" name="radio" value="3" class="radio-buttons"> No thanks
+       </div>
+
+       <div id="favorite">
+         <label id="favorite-label" for="">What is your favorite thing about Microverse?</label> <br>
+        <select name="dropdown" id="dropdown">
+          <option value="1" disabled selected value>Select an option</option>
+          <option value="2">Projects</option>
+          <option value="3">Challenges</option>
+          <option value="4">The students</option>
+        </select>
        </div>
 
         </form>
